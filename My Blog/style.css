@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: -15px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 1;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+
+}
+
+.nav a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+.herosec {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tagline h1 {
+    font-size: 65px;
+    margin-bottom: -50px;
+    margin-top: 95px;
+}
+
+.tagline p {
+    font-size: 28px;
+}
+
+.tagimg img {
+    border-radius: 40px;
+}
+
+.topbanner {
+    display: flex;
+    border: 1px solid rgb(184, 175, 175);
+    border-radius: 5px;
+}
+
+.bannertext {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.readmorebtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.readmorebtn:hover {
+    text-decoration: underline;
+}
+
+.bannerimg img {
+    margin-bottom: -9px;
+
+}
+
+.card {
+    border: 1px solid rgb(202, 202, 202);
+    width: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardtext {
+    padding: 0 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.card img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer li {
+    padding: 0 15px;
+}
+
+.postimg img {
+    width: 100%;
+    height: auto;
+}
+
+.postheading h1 {
+    font-size: 35px;
+    margin: -12px 0 -28px 0;
+}
+
+.postheading span {
+    font-weight: 100;
+    padding-left: 15px;
+}
+
+article {
+    text-align: justify;
+}
+
+@media (max-width:1200px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:800px) {
+    header {
+        justify-content: space-around;
+    }
+
+    .herosec {
+        display: block;
+        text-align: center;
+
+    }
+
+    .topbanner {
+        display: block;
+        text-align: center;
+    }
+
+    .cards {
+        display: block;
+        text-align: center;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+}

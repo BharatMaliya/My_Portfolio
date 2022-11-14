@@ -1,0 +1,281 @@
+:root {
+    --lighting-color: #0089b7;
+    --dark-color: #003d62;
+    --darker-color: #003251;
+    --secondary-color: #fff700;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    color: white;
+
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background-color: var(--lighting-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    border-bottom: 0.4rem solid yellow;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+#hero {
+    background-color: var(--dark-color);
+    border-bottom: 0.5rem solid var(--lighting-color);
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    scroll-margin-top: 5rem;
+}
+
+.heroimg img {
+    border-radius: 10%;
+    width: 300px;
+    height: auto;
+}
+
+.herotext {
+    text-align: center;
+}
+
+.hi_text {
+    color: var(--secondary-color);
+    font-size: 5rem;
+}
+
+
+.name_text {
+    font-size: 5rem;
+}
+
+
+.profession {
+    font-size: 4rem;
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 3s steps(18);
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes text {
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 18ch;
+    }
+}
+
+/* !!!!!!!!!!!!!!Projects!!!!!!!!!!!!!!!!!!!!!!!! */
+
+#projects {
+    background-color: var(--darker-color);
+    scroll-margin-top: 5rem;
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 6rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 12rem;
+    row-gap: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+.card {
+    width: 32rem;
+    height: 36rem;
+    border-radius: 1rem;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.card img {
+    border-radius: 1rem;
+}
+
+.card_content {
+    position: relative;
+    top: -6rem;
+    padding: 2rem;
+    transition: 1s;
+    transform: translateY(10rem);
+}
+
+
+.card:hover img {
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.card:hover .card_content {
+    background: white;
+    transform: scale(1.05);
+    transition: 1s;
+    color: var(--dark-color);
+    transform: translateY(0rem);
+}
+
+/* !!!!!!!!!!!!!Contact!!!!!!!!!!!!!!!!!!!!!! */
+#contact {
+    background-color: var(--dark-color);
+}
+
+.container h1 {
+    font-size: 6rem;
+    text-align: center;
+    padding: 8rem;
+}
+
+
+.socialmedia ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    justify-content: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    color: white;
+    font-size: 4rem;
+    transition: 0.2s;
+}
+
+.socialmedia {
+    padding-bottom: 14rem;
+}
+
+footer {
+    background-color: var(--darker-color);
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:32rem) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .heroimg img {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    .herotext {
+        transform: scale(0.65);
+    }
+
+    #projects h1 {
+        transform: scale(0.65);
+    }
+
+    .cards {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:67.9rem) {
+
+    .card img {
+        width: 90%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:65rem) {
+
+    #hero {
+        flex-direction: column;
+    }
+
+}
+
+"E:\Developer\Projects\HTML,CSS\Portfolio\Job Application\index.html"
+"E:\Developer\Projects\HTML,CSS\Portfolio\index.html"

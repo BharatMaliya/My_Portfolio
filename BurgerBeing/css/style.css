@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --name: red;
+}
+
+#logo img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 0.07rem 0.07rem 0.1rem white, -0.0rem -0.05rem 0.1rem white;
+
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    box-shadow: 0.1rem 0.1rem 1rem;
+    z-index: 5;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.25rem 1.5rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 2rem;
+}
+
+#home {
+    background-image: url('../Images/food2-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    font-family: 'Bree Serif', serif;
+    box-shadow: 0.3rem 0.3rem 3rem;
+}
+
+.home_content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 5rem;
+
+}
+
+#home p {
+    font-size: 1.8rem;
+}
+
+#home button {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid white;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+
+#services h1 {
+    font-size: 5rem;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    padding: 5rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 5rem;
+
+}
+
+.card {
+    border: 2px solid brown;
+    width: 34rem;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: 0.5s;
+
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.card p {
+    font-size: 1.5rem;
+    padding: 0 1rem 1rem 1rem;
+    text-align: justify;
+}
+
+.card img {
+    width: 34rem;
+    height: 23rem;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+#client {
+    background-image: url('../Images/food-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+
+
+}
+
+#client h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 3rem;
+    color: white;
+}
+
+.client img {
+    width: 20rem;
+    height: auto;
+}
+
+.client {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+    flex-wrap: wrap;
+}
+
+footer h3 {
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (max-width:60rem) {
+    nav a {
+        padding: 0.25rem 1rem;
+        font-size: 1rem;
+    }
+
+    #logo img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    #home {
+        background-image: url('../Images/food2-bg.jpg');
+        background-position: left;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+}

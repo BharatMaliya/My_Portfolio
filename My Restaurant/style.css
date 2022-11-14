@@ -1,0 +1,192 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Xanh+Mono&display=swap'); */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    line-height: 1.4e;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navicon {
+    font-size: 40px;
+}
+
+header {
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.1);
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background: white;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.sidetext {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.offertag {
+    background-color: green;
+    padding: 5px 10px;
+    color: white;
+    align-self: flex-start;
+}
+
+.tagline {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+button {
+    background-color: rgb(248, 192, 123);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: rgba(248, 192, 123, 0.8);
+}
+
+.topsec {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    width: 350px;
+    transition: 0.3s;
+    margin: 15px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 4px rgba(1, 1, 1, 0.15);
+}
+
+.card>div {
+    margin-left: 15px;
+}
+
+.menu .offertag {
+    align-self: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.item1 {
+    grid-area: I1;
+}
+
+.item2 {
+    grid-area: I2;
+}
+
+.item3 {
+    grid-area: I3;
+}
+
+.item4 {
+    grid-area: I4;
+}
+
+.item5 {
+    grid-area: I5;
+}
+
+.item6 {
+    grid-area: I6;
+}
+
+.item7 {
+    grid-area: I7;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 'I1 I1 I2 I3' 'I1 I1 I2 I7' 'I4 I5 I6 I7';
+    gap: 10px;
+
+}
+
+.grid>div>img {
+    border-radius: 10px;
+    transition: 0.2s;
+    width: 100%;
+    height: auto;
+}
+
+.grid>div>img:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    margin-top: 80px;
+    background-color: antiquewhite;
+}
+
+.footer_container {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+@media (max-width:1000px) {
+    .topsec {
+        flex-direction: column;
+    }
+
+    #dish img {
+        width: 100%;
+        height: auto;
+        margin-bottom: -150px;
+    }
+
+    .sidetext {
+        transform: scale(0.6);
+        gap: 0;
+    }
+
+}
+
+@media (max-width:680px) {
+    .footer_container {
+        flex-direction: column;
+    }
+}

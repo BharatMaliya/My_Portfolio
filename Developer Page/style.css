@@ -1,0 +1,130 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.topimg {
+    background-image: url('images/developer.png');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: -50px;
+}
+
+.topimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    color: white;
+}
+
+.topimg h1 {
+    font-size: 60px;
+}
+
+.topimg h2 {
+    font-size: 60px;
+}
+
+.smalltext {
+    font-size: 30px;
+}
+
+.banner {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 40px 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+
+.product h3 {
+    padding: 0 15px 0 15px;
+}
+
+.product p {
+    padding: 0 15px 25px 15px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s;
+    margin: 30px;
+}
+
+.griditem {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+.contact {
+    background-color: blueviolet;
+    padding: 15px;
+}
+
+.about {
+    background-color: brown;
+    padding: 15px;
+}
+
+.me {
+    display: flex;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 25px;
+}
+
+@media screen and (max-width:1000px) {
+    .me {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .banner {
+        padding: 0.5px;
+        font-size: 20px;
+    }
+
+    .topimg h1 {
+        font-size: 30px;
+    }
+
+    .topimg h2 {
+        font-size: 15px;
+    }
+
+    .card {
+        margin: 15px;
+    }
+
+}
